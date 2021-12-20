@@ -5,8 +5,10 @@ object Functions1 {
   def add(a: Int, b: Int) = { a + b }
   def sub(a: Int, b: Int) = { a - b }
 
-  type intFunc2 = (Int, Int) => Int
+  type IntFunc2 = (Int, Int) => Int
 
+
+  def myJob(f: IntFunc2) = f(2, 4)
 
   def main(args: Array[String]): Unit = {
 
